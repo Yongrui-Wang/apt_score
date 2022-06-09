@@ -6,6 +6,9 @@ import openpyxl
 import itertools
 
 
+__author__ = "Yongrui Wang"
+__license__ = "MIT"
+
 DNA_BASES = u"ATGC"
 
 def raw_count(file_name):
