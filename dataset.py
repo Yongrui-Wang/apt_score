@@ -4,6 +4,9 @@ import torch
 from data import get_kmer_feature
 
 
+__author__ = "Yongrui Wang"
+__license__ = "MIT"
+
 class APTDataset(Dataset):
     def __init__(self):
         file_path = '/home/ibmc-2/my_project/apt/APT220624.R79-AGS.csv'
