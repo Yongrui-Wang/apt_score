@@ -12,6 +12,9 @@ from dataset import APTDataset
 
 from utils import plot_image, plot_curve, one_hot
 
+__author__ = "Yongrui Wang"
+__license__ = "MIT"
+
 
 dataset = APTDataset()
 batch_size = 512
