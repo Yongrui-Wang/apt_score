@@ -148,27 +148,6 @@ for epoch in tqdm(range(40)):
     writer.add_scalar('Loss/valid', mean_valid_loss, step)
 
 plot_curve(eval_preds)
-# we get optimal [w1, b1, w2, b2, w3, b3]
 
 
-# total_correct = 0
-# for x,y in test_loader:
-#     x = x.view(x.size(0), 28*28)
-#     x = Variable(x).cuda()
-#     y = Variable(y).cuda()
-#     out = model(x)
-#     # out: [b, 10] => pred: [b]
-#     out = Variable(out).cuda()
-#     pred = out.argmax(dim=1)
-#     correct = pred.eq(y).sum().float().item()
-#     total_correct += correct
-#
-# total_num = len(test_loader.dataset)
-# acc = total_correct / total_num
-# print('test acc:', acc)
-#
-# x, y = next(iter(test_loader))
-# model = model.cpu()
-# out = model(x.view(x.size(0), 28*28))
-# pred = out.argmax(dim=1)
-# plot_image(x, pred, 'test')
+
